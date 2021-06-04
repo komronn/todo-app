@@ -11,7 +11,7 @@ function createListElement() {
 
     div.className = 'text';
     checkBox.type = 'checkbox';
-    deleteButton.innerHTML = 'delete';
+    deleteButton.innerText = 'delete';
 
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(div);
