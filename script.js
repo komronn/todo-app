@@ -1,7 +1,6 @@
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 const ul = document.querySelector('ul');
-const clearButton = document.getElementById('clearBtn');
 
 function createListElement() {
     const div = document.createElement('div');
@@ -13,11 +12,9 @@ function createListElement() {
     checkBox.type = 'checkbox';
     deleteButton.innerText = 'delete';
 
-    li.appendChild(document.createTextNode(input.value));
-    ul.appendChild(div);
-    div.appendChild(li);
-    div.appendChild(checkBox);
-    div.appendChild(deleteButton);
+    li.append(document.createTextNode(input.value));
+    ul.append(div);
+    div.append(li, checkBox, deleteButton);
     input.value = '';
 
     checkBox.addEventListener('click', () => {
@@ -26,9 +23,6 @@ function createListElement() {
 
     deleteButton.addEventListener('click', () => {
         div.remove();
-        li.remove();
-        checkBox.remove();
-        deleteButton.remove();
     })
 }
 
