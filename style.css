@@ -1,0 +1,119 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+h1, p {
+    text-align: center;
+    padding: 0.3rem 0;
+    color: #E1EBEE;
+}
+
+li {
+    list-style-type: none;
+    flex: 1;
+    color: #E1EBEE;
+}
+
+.outer__container {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 105.3deg,  rgba(30,39,107,1) 21.8%, rgba(77,118,221,1) 100.2% );
+}
+
+.inner__container {
+    background: #00416A;
+    min-height: 600px;
+    width: 650px;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 2em;
+}
+
+.title__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__container {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 6em;
+}
+
+.input__container > input {
+    outline: none;
+    flex: 1;
+    border: 2px solid #72A0C1;
+    height: 45px;
+    width: 400px;
+    border-radius: 3px;
+    background: #00416A;
+    padding: 0 1em;
+    color: #E1EBEE;
+}
+
+.input__container > button {
+    border: 2px solid #72A0C1;
+    border-radius: 3px;
+    height: 45px;
+    margin-left: -5px;
+    background: #00416A;
+    color: #72A0C1;
+    padding: 0 1em;
+}
+
+.input__container > button:active {
+    color: #E1EBEE;
+    border: 2px solid #E1EBEE;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    background-color: rgba(77,118,221,1);
+}
+
+.todo__container {
+    padding: 1em;
+    margin: 1em;
+}
+
+.text > input {
+    width: 30px;
+    height: 30px;
+    margin: 0 1em;
+}
+
+.text > button {
+    border: 2px solid #72A0C1;
+    border-radius: 3px;
+    height: 30px;
+    background: #00416A;
+    color: #72A0C1;
+    padding: 0 1em;
+}
+
+.text > button:active {
+    color: #E1EBEE;
+    border: 2px solid #E1EBEE;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    background-color: rgba(77,118,221,1);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border: 2px solid #72A0C1;
+    border-radius: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 30%;
+}
